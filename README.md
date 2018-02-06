@@ -19,6 +19,7 @@ MVP: CRUD,
 Create: string for youtube url. (can youtube link be scraped by nokogiri or something similar?)
 text for notes. (this could be a mini TextEditor, or allow formatting like bold/lists, etc)
 
+
 # README
 
 This README would normally document whatever steps are necessary to get the
