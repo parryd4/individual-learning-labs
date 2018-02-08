@@ -19,6 +19,7 @@ MVP: CRUD,
 Create: string for youtube url. (can youtube link be scraped by nokogiri or something similar?)
 text for notes. (this could be a mini TextEditor, or allow formatting like bold/lists, etc)
 
+[Rspec for api](http://matthewlehner.net/rails-api-testing-guidelines/)
 
 # README
 
