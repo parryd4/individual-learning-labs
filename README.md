@@ -20,6 +20,11 @@ Create: string for youtube url. (can youtube link be scraped by nokogiri or some
 text for notes. (this could be a mini TextEditor, or allow formatting like bold/lists, etc)
 
 [Rspec for api](http://matthewlehner.net/rails-api-testing-guidelines/)
+[Testable code](https://www.toptal.com/qa/how-to-write-testable-code-and-why-it-matters)
+[Rspec series](https://semaphoreci.com/community/tutorials/getting-started-with-rspec)
+[using Capybara with rspec](https://github.com/teamcapybara/capybara#using-capybara-with-rspec)
+
+[Wow need to read this before proceed](http://guides.rubyonrails.org/testing.html)
 
 # README
 

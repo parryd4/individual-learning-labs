@@ -39,6 +39,7 @@ group :development, :test do
 
   # rspec tests!
   gem 'rspec-rails'
+  gem 'capybara'
 end
 
 group :development do
