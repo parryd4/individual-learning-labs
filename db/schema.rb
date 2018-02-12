@@ -16,6 +16,10 @@ ActiveRecord::Schema.define(version: 20180212205121) do
   enable_extension "plpgsql"
 
   create_table "labs", force: :cascade do |t|
+    t.string "title"
+    t.text "description"
+    t.boolean "public", default: false
+    t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

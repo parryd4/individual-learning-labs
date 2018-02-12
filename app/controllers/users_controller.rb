@@ -6,6 +6,12 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+
+    if current_user.id == params[:id]
+      @labs = @user.labs
+    else
+      @labs = @user.labs.where(public: true)
+    end
   end
 
   def new
