@@ -1,9 +1,11 @@
 <h1><%= @user.username %></h1>
 
+<%= link_to "New Lab", new_lab_path %>
 <ul>
   <% @labs.each do |l| %>
-    <li><%= link_to l.title, lab_path(l) %></li>
+    <li>
+      <h3><%= link_to l.title, lab_path(l) %></h3>
+      <p><%= l.description %></p>
+    </li>
   <% end %>
 </ul>
-
-<%= link_to "New Lab", new_lab_path %>

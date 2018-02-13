@@ -3,7 +3,7 @@ class User < ApplicationRecord
   validates :username, presence: true
 
   # has_many :user_labs
-  # has_many :labs, through: user_labs
+  # has_many :labs, through: :user_labs
   has_many :labs
-  # has_many :materials, through: :labs
+  has_many :materials
 end

@@ -7,11 +7,12 @@ class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
 
-    if current_user.id == params[:id]
+    # Even own user could not see their Private labs
+    # if session[:user_id] == params[:id]
       @labs = @user.labs
-    else
-      @labs = @user.labs.where(public: true)
-    end
+    # else
+    #   @labs = @user.labs.where(public: true)
+    # end
   end
 
   def new
