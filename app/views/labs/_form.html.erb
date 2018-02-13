@@ -6,9 +6,9 @@
 
   <!-- Looks confusing: Attribute is 'public' and default setting is 'false' to make 'Private' -->
   <%= f.radio_button :public, false, :checked => true %>
-  <%= label :public, 'Private' %>
+  <%= label :public, "Private" %>
   <%= f.radio_button :public, true %>
-  <%= label :public, 'Public' %>
+  <%= label :public, "Public" %>
 
   <%= f.hidden_field :user_id, value: session[:user_id] %>
   <%= f.submit %>

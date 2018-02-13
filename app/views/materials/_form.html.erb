@@ -1,0 +1,14 @@
+<%= form_for @material do |f| %>
+  <%= f.collection_select :lab_id, Lab.where(user_id: session[:user_id]), :id, :title %>
+
+  <!-- Specific to Material -->
+  <%= f.label "Title: " %>
+  <%= f.text_field :title %>
+  <%= f.label "URL: " %>
+  <%= f.text_field :url %>
+  <%= f.label "Notes: " %>
+  <%= f.text_area :notes %>
+
+  <%= f.hidden_field :user_id, value: session[:user_id] %>
+  <%= f.submit %>
+<% end %>

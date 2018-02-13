@@ -3,6 +3,14 @@
 <p><%= @lab.description %></p>
 
 <% if @lab.user_id == session[:user_id] %>
-  <!-- <%= link_to %> -->
-  <p>Link to add a material to lab</p>
+  <%= link_to "New Material", new_material_path %>
 <% end %>
+
+<ul>
+  <% @lab.materials.each do |m| %>
+    <li>
+      <h3><%= link_to m.title, material_path(m) %></h3>
+      <!-- <p><%= l.description %></p> -->
+    </li>
+  <% end %>
+</ul>

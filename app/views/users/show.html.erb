@@ -1,6 +1,6 @@
 <h1><%= @user.username %></h1>
 
-<%= link_to "New Lab", new_lab_path %>
+<%= link_to "New Lab", new_lab_path %> or <%= link_to "New Material", new_material_path %>
 <ul>
   <% @labs.each do |l| %>
     <li>
